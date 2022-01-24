@@ -1,0 +1,30 @@
+#include<stdio.h>
+int main()
+{
+    int Tamil,English,Maths,Science,Social,total;
+    float avg;
+    printf("Enter a Tamil marks:");
+    scanf("%d",&Tamil);
+    printf("Enter a English marks:");
+    scanf("%d",&English);
+    printf("Enter a Maths marks:");
+    scanf("%d",&Maths);
+    printf("Enter a Science marks:");
+    scanf("%d",&Science);
+    printf("Enter a Social marks:");
+    scanf("%d",&Social);
+    total=Tamil+English+Maths+Science+Social;
+    printf("/n Total:%d",total);
+    avg=total/5;
+    printf("/n Average:%f",avg);
+    return 0;
+    if (Tamil>35&&English>35&&Maths>35&&Science>35&&Social>35)
+    {
+        printf("/n Result:PASS");
+    }
+    else
+    {
+        printf("/n Result;FAIL");
+    }
+    return 0;
+}
